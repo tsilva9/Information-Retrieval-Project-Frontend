@@ -1,0 +1,53 @@
+.searchbar {
+  background-color: $color-primary-dark;
+  height: 7rem;
+  width: 60vw;
+  display: flex;
+  flex-direction: column;
+  font-family: $font-primary;
+  font-weight: 400;
+
+  border-radius: 10px;
+  box-shadow: 0px 7px 10px rgba(black, 0.3);
+  
+  &__container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: .7rem;
+
+    &--query {
+      font-family: $font-primary;
+      font-weight: 400;
+      font-size: 2.6rem;
+      margin-left: 3rem;
+      margin-top: .5rem;
+      align-self: center;
+      justify-self: flex-start;
+      background-color: $color-primary-dark;
+      @media only screen and (max-width: $bp-small) {
+        margin-left: 1rem;
+        font-size: 2rem;
+        width: 15rem;
+      }
+    }
+  
+    &--mg {
+      height: 4.7rem;
+      align-self: center;
+      justify-self: flex-end;
+      margin-right: 3rem;
+    }
+  }
+
+  &__line {
+    width: 95%;
+    align-self: center;
+    justify-self: flex-end;
+    margin-top: .5rem;
+
+    @media only screen and (max-width: $bp-small) {
+      width: 90%;
+    }
+  }
+}

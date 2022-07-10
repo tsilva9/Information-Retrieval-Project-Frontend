@@ -1,0 +1,50 @@
+// Color Variables
+$color-primary: #E1DFDD;
+$color-primary-dark: #c4c4c4;
+
+$color-grey: #353535;
+$color-dark: #000000;
+
+//Font Variables
+$font-primary: "IBM Plex Serif";
+
+// Breakpoint Variables
+$bp-huge: 87.5em; //1400px
+$bp-largest: 75em; //1200px
+$bp-large: 62.5em; //1000px
+$bp-medium: 50em; //800px
+$bp-small: 37.5em; //600px
+
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; // 10px / 16px = 62.5% -> 1rem = 10px
+
+  @media only screen and (max-width: $bp-huge) {
+    font-size: 50%;
+  }
+}
+
+
+input {
+  border: none;
+      &:focus, &:active {
+        outline: none;
+      }
+
+      &::placeholder {
+        color: $color-grey;
+      }
+}
+
+input[type="file"] {
+  display: none;
+}

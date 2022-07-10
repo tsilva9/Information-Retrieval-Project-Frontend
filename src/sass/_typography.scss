@@ -1,0 +1,45 @@
+%heading {
+  font-family: $font-primary;
+  font-weight: 400;
+
+}
+
+.heading-1 {
+  @extend %heading;
+  font-size: 9rem;
+  color: $color-dark;
+  line-height: 1;
+  font-weight: 200;
+}
+
+.heading-2 {
+  @extend %heading;
+  font-size: 2.8rem;
+  color: $color-dark;
+  line-height: 1;
+  font-weight: 400;
+}
+
+.heading-3 {
+  @extend %heading;
+  font-size: 2.4rem;
+  color: $color-dark;
+  line-height: 1;
+  font-weight: 400;
+}
+
+.mb-sm {
+  margin-bottom: 2rem;
+}
+
+.mb-md {
+  margin-bottom: 3rem;
+}
+
+.mb-lg {
+  margin-bottom: 4rem;
+}
+
+.mb-hg {
+  margin-bottom: 8rem;
+}
